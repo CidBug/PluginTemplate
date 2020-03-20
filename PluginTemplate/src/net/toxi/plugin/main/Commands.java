@@ -1,5 +1,6 @@
 package net.toxi.plugin.main;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -27,6 +28,12 @@ public class Commands implements CommandExecutor{
 						p.sendMessage("Los gehts!");
 						Timer t = new Timer();
 						t.startTimer();
+						break;
+						
+					case "check":
+						Utils u = new Utils();
+						u.checkForTNT(Bukkit.getPlayer("Kenny"));
+						p.sendMessage("Kenny hat nun kein TNT mehr ;D");
 						break;
 					default:
 						break;
