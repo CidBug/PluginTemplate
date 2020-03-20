@@ -1,0 +1,6 @@
+name: PluginTemplate
+version: 0.1
+author: Proxy64
+main: net.toxi.plugin.main.Plugin
+commands:
+    test:
